@@ -70,8 +70,8 @@ var ViewModel = function() {
 		this.clickCount(this.clickCount() + 1);
 	}
 
-	function changeCat(){
-		self.currentCat(self.catList()[$index])
+	this.setCat = function(clickedCat) {
+		self.currentCat(clickedCat);
 	}
 }
 
